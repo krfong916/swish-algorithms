@@ -1,0 +1,28 @@
+{
+  "name": "swish-algorithms",
+  "version": "1.0.0",
+  "description": "A graph algorithm visualization project",
+  "main": "index.js",
+  "repository": "https://github.com/krfong916/swish-algorithms.git",
+  "author": "Kyle Fong <krfong@ucsc.edu>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "format": "prettier --write \"src/**/*.+(js|css|json)\""
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.7.1",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.3",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-json": "^2.0.1",
+    "eslint-plugin-prettier": "^3.1.1",
+    "jest": "^24.9.0",
+    "lint-staged": "^9.4.2",
+    "prettier": "^1.18.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
