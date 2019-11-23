@@ -59,4 +59,25 @@ export let minHeap = {
 		}
 		return arr;
 	},
+	decreaseKey: function(arr, index, newWeight) {
+		if (newWeight > arr[index].weight) {
+			return;
+		} else {
+			arr[index].weight = newWeight;
+			while (
+				index != 0 &&
+				arr[index].weight < arr[this.getParent(index)].weight
+			) {
+				this.swap(arr, index, this.getParent(index));
+				index = this.getParent(index);
+			}
+		}
+	},
+	extractMin: function(arr) {
+		let minNode = arr[1];
+		arr[1] = arr.pop();
+		this.minHeapify(arr, 1);
+
+		return minNode;
+	},
 };
